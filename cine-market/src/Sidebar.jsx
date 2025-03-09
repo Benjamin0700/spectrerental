@@ -25,7 +25,7 @@ const Sidebar = () => {
     ];
 
     return (
-        <div className="w-64 bg-white min-h-screen p-4 shadow-lg">
+        <div className="w-64 bg-white min-h-screen p-2 shadow-lg">
             {/* Logo */}
             <h1 className="text-3xl font-bold mb-6 text-center">
                 <span className="text-gray-600">Cine</span>
