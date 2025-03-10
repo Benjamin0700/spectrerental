@@ -14,9 +14,14 @@ const Sidebar = () => {
         { name: "Аксессуары", icon: Package, path: "/accessories" },
         { name: "Видеоконтроль", icon: Video, path: "/video-control" },
         { name: "Звук", icon: Volume2, path: "/sound" },
+<<<<<<< HEAD
         { name: "Повозки и Краны", icon: Truck, path: "/carts-cranes" },
         { name: "Стабилизация", icon: Move, path: "/stabilization" },
         { name: "Копты", icon: Airplay, path: "/drones" },
+=======
+        { name: "Повозки и Краны", icon: Truck, path: "/cranes" },
+        { name: "Стабилизация", icon: Move, path: "/stabilization" },
+>>>>>>> 8118b4d (done)
         { name: "Свет", icon: Sun, path: "/light" },
         { name: "Грипп", icon: Hand, path: "/grip" },
         { name: "Спецэффекты", icon: Sparkles, path: "/special-effects" },

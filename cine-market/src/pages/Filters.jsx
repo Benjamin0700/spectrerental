@@ -18,11 +18,19 @@ const Filters = () => {
                         className={`border rounded-lg overflow-hidden shadow-md transition duration-300 ${index === 0 ? "border-black" : ""
                             }`}
                     >
+<<<<<<< HEAD
                         <div className="p-4 flex justify-center items-center h-32 bg-white">
                             <img
                                 src={filters.logo}
                                 alt={filters.name}
                                 className="h-32 object-contain"
+=======
+                        <div className="p-4 flex justify-center items-center h-48 bg-white">
+                            <img
+                                src={filters.logo}
+                                alt={filters.name}
+                                className="h-38 object-contain"
+>>>>>>> 8118b4d (done)
                             />
                         </div>
                         <div
