@@ -15,11 +15,7 @@ const accessories = [
 const Accessories = () => {
     return (
         <div className="p-10">
-<<<<<<< HEAD
-            <h1 className="text-2xl font-semibold mb-6">Фильтеры</h1>
-=======
             <h1 className="text-2xl font-semibold mb-6">Аксессуары</h1>
->>>>>>> 8118b4d (done)
             <div className="grid grid-cols-3 gap-4">
                 {accessories.map((accessories, index) => (
                     <div
@@ -27,19 +23,11 @@ const Accessories = () => {
                         className={`border rounded-lg overflow-hidden shadow-md transition duration-300 ${index === 0 ? "border-black" : ""
                             }`}
                     >
-<<<<<<< HEAD
-                        <div className="p-4 flex justify-center items-center h-32 bg-white">
-                            <img
-                                src={accessories.logo}
-                                alt={accessories.name}
-                                className="h-32 object-contain"
-=======
                         <div className="p-4 flex justify-center items-center h-48 bg-white">
                             <img
                                 src={accessories.logo}
                                 alt={accessories.name}
                                 className="h-38 object-contain"
->>>>>>> 8118b4d (done)
                             />
                         </div>
                         <div

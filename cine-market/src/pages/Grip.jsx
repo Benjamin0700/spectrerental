@@ -1,16 +1,5 @@
 import React from "react";
 
-<<<<<<< HEAD
-const Grip = () => {
-  return (
-    <div>
-      <h1>Accessories Page</h1>
-    </div>
-  );
-};
-
-export default Grip; // Default eksport mavjudligiga ishonch hosil qiling
-=======
 const optica = [
     { name: "Оптика формату FULL FRAME", logo: "https://patriot.ua/wp-content/uploads/2020/05/LARDZHformat-500x500.jpg" },
     { name: "COOKE Оптика", logo: "https://patriot.ua/wp-content/uploads/2020/05/kuky2-500x500.jpg" },
@@ -70,4 +59,3 @@ const Optica = () => {
 };
 
 export default Optica;
->>>>>>> 8118b4d (done)

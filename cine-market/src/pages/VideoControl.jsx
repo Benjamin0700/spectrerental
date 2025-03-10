@@ -1,11 +1,5 @@
 import React from "react";
 
-<<<<<<< HEAD
-const VideoControl = () => {
-  return (
-    <div>
-      <h1>Accessories Page</h1>
-=======
 const video = [
   { name: "Наборы DIT/Воспроизведения", logo: "https://patriot.ua/wp-content/uploads/2020/05/DYT-500x500.jpg" },
   { name: "ПРЯМАЯ ТРАНСЛЯЦИЯ", logo: "https://patriot.ua/wp-content/uploads/2020/03/072A39912-kopyya-1-500x500.jpg" },
@@ -61,13 +55,8 @@ const VideoControl = () => {
           </div>
         ))}
       </div>
->>>>>>> 8118b4d (done)
     </div>
   );
 };
-
-<<<<<<< HEAD
-export default VideoControl; // Default eksport mavjudligiga ishonch hosil qiling
-=======
 export default VideoControl;
->>>>>>> 8118b4d (done)
+

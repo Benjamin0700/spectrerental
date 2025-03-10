@@ -2,12 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Accessories from './pages/Accessories';
 import Cameras from './pages/Cameras';
-<<<<<<< HEAD
-import CartsCranes from './pages/CartsCranes';
-import Drones from './pages/Drones';
-=======
 import Cranes from './pages/Cranes';
->>>>>>> 8118b4d (done)
 import Filters from './pages/Filters';
 import Grip from './pages/Grip';
 import Home from "./pages/Home"; // Home sahifasi
@@ -34,18 +29,14 @@ const App = () => {
             <div className="flex-1 p-6 bg-gray-1
             00">
               <Routes>
-<<<<<<< HEAD
-                <Route path="/" element={<Navigate to="/dashboard" replace />} />
+                <Route path="/" element={<Navigate to="/home" replace />} />
                 <Route path="/accessories" element={<Accessories />} />
                 <Route path="/cameras" element={<Cameras />} />
                 <Route path="/cart-cranes" element={<CartsCranes />} />
-                <Route path="/drones" element={<Drones />} />
-=======
                 <Route path="/" element={<Navigate to="/home" replace />} />
                 <Route path="/accessories" element={<Accessories />} />
                 <Route path="/cameras" element={<Cameras />} />
                 <Route path="/cranes" element={<Cranes />} />
->>>>>>> 8118b4d (done)
                 <Route path="/filters" element={<Filters />} />
                 <Route path="/grip" element={<Grip />} />
                 <Route path="/home" element={<Home />} />
