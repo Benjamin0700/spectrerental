@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { 
     Home, Camera, Aperture, Filter, Package, Video, Volume2, 
     Truck, Move, Airplay, Sun, Hand, Sparkles, BatteryCharging, Car 
@@ -6,6 +6,8 @@ import {
 import React from "react";
 
 const Sidebar = () => {
+    const navigate = useNavigate(); // Hook for navigation
+
     const menuItems = [
         { name: "Главная", icon: Home, path: "/home" },
         { name: "Камеры", icon: Camera, path: "/cameras" },
@@ -25,8 +27,10 @@ const Sidebar = () => {
 
     return (
         <div className="w-64 bg-white min-h-screen p-2 shadow-lg">
-            {/* Logo */}
-            <h1 className="text-3xl font-bold mb-6 text-center">
+            <h1 
+                className="text-3xl font-bold mb-6 text-center cursor-pointer"
+                onClick={() => navigate("/home")}
+            >
                 <span className="text-gray-600">Cine</span>
                 <span className="text-gray-400">Market</span>
             </h1>
