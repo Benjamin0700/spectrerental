@@ -15,7 +15,7 @@ const cameras = [
 
 const Cameras = () => {
     return (
-        <div className="p-10">
+        <div className="p-12">
             <h1 className="text-2xl font-semibold mb-6">Камеры</h1>
             <div className="grid grid-cols-3 gap-4">
                 {cameras.map((camera, index) => (

@@ -1,47 +1,75 @@
 import React from "react";
 
-const optica = [
-    { name: "Оптика формату FULL FRAME", logo: "https://patriot.ua/wp-content/uploads/2020/05/LARDZHformat-500x500.jpg" },
-    { name: "COOKE Оптика", logo: "https://patriot.ua/wp-content/uploads/2020/05/kuky2-500x500.jpg" },
-    { name: "SONY", logo: "" },
-    { name: "Blackmagic", logo: "" },
-    { name: "Canon", logo: "" },
-    { name: "Phantom", logo: "" },
-    { name: "Dji Osmo", logo: "" },
-    { name: "Gopro", logo: "" },
-    { name: "Panasonic", logo: "" },
-    { name: "Freefly", logo: "" },
+const stabilization = [
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
+  { name: "", text: "", logo: "" },
 ];
 
-const Optica = () => {
+const Stabilization = () => {
     return (
-        <div className="p-10">
-            <h1 className="text-2xl font-semibold mb-6">Стабилизация</h1>
+        <div className="p-12">
+            <h1 className="text-2xl font-semibold mb-6">Спец Эффекты</h1>
             <div className="grid grid-cols-3 gap-4">
-                {optica.map((optica, index) => (
+                {stabilization.map((stabilization, index) => (
                     <div
                         key={index}
-                        className={`border rounded-lg overflow-hidden shadow-md transition duration-300 ${index === 0 ? "border-black" : ""
-                            }`}
+                        className="group rounded-lg overflow-hidden shadow-md transition duration-300 hover:border-red-600"
                     >
+                        {/* Image */}
                         <div className="p-4 flex justify-center items-center h-48 bg-white">
                             <img
-                                src={optica.logo}
-                                alt={optica.name}
+                                src={stabilization.logo}
+                                alt={stabilization.name}
                                 className="h-38 object-contain"
                             />
                         </div>
-                        <div
-                            className={`p-4 flex justify-between items-center transition duration-300 ${index === 0 ? "bg-black text-white" : "bg-gray-200"
-                                } hover:bg-black hover:text-white`}
-                        >
-                            <span className="font-medium">{optica.name}</span>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-md">
+
+                        {/* Title + Button */}
+                        <div className="p-4 flex flex-col items-center text-center transition duration-300 bg-gray-200 group-hover:bg-red-600 group-hover:text-white">
+                            <span className="font-medium">{stabilization.name}</span>
+                            <span className="font-medium">{stabilization.text}</span>
+
+                            {/* Hidden Button */}
+                            <button className="w-full mt-4 py-2 px-4 bg-red-600 text-white rounded-lg flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
                                     fill="none"
-                                    stroke="white"
+                                    stroke="currentColor"
                                     strokeWidth="2"
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -49,6 +77,7 @@ const Optica = () => {
                                 >
                                     <path d="M9 18l6-6-6-6" />
                                 </svg>
+                                ЗАПРОС ЦЕНЫ
                             </button>
                         </div>
                     </div>
@@ -58,4 +87,4 @@ const Optica = () => {
     );
 };
 
-export default Optica; // Default eksport mavjudligiga ishonch hosil qiling
+export default Stabilization;
