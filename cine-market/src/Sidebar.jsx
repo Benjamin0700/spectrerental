@@ -1,12 +1,12 @@
 import { NavLink, useNavigate } from "react-router-dom";
-import { 
-    Home, Camera, Aperture, Filter, Package, Video, Volume2, 
-    Truck, Move, Airplay, Sun, Hand, Sparkles, BatteryCharging, Car 
+import {
+    Home, Camera, Aperture, Filter, Package, Video, Volume2,
+    Truck, Move, Airplay, Sun, Hand, Sparkles, BatteryCharging, Car
 } from "lucide-react";
 import React from "react";
 
 const Sidebar = () => {
-    const navigate = useNavigate(); // Hook for navigation
+    const navigate = useNavigate();
 
     const menuItems = [
         { name: "Главная", icon: Home, path: "/home" },
@@ -26,8 +26,8 @@ const Sidebar = () => {
     ];
 
     return (
-        <div className="w-64 bg-white min-h-screen p-2 shadow-lg">
-            <h1 
+        <div className="w-64 bg-white min-h-screen p-4 shadow-lg fixed top-0 left-0 h-full">
+            <h1
                 className="text-3xl font-bold mb-6 text-center cursor-pointer"
                 onClick={() => navigate("/home")}
             >
@@ -35,13 +35,12 @@ const Sidebar = () => {
                 <span className="text-gray-400">Market</span>
             </h1>
 
-            {/* Menu */}
             <ul>
                 {menuItems.map((item, index) => (
                     <li key={index} className="mb-2">
                         <NavLink
                             to={item.path}
-                            className={({ isActive }) => `flex items-center gap-3 p-2 rounded cursor-pointer ${isActive ? 'bg-gray-200 font-serif' : 'hover:text-gray-600'}`}
+                            className={({ isActive }) => `flex items-center gap-2 p-2 rounded cursor-pointer ${isActive ? 'bg-gray-200 font-serif' : 'hover:text-gray-600'}`}
                         >
                             <item.icon className="w-5 h-5" />
                             {item.name}
@@ -52,5 +51,6 @@ const Sidebar = () => {
         </div>
     );
 };
+
 
 export default Sidebar;

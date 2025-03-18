@@ -15,8 +15,7 @@ const optica = [
 
 const Optica = () => {
     return (
-        <div className="p-12">
-            <h1 className="text-2xl font-semibold mb-6">Транспорт</h1>
+        <div className="p-16">
             <div className="grid grid-cols-3 gap-4">
                 {optica.map((optica, index) => (
                     <div
@@ -28,7 +27,7 @@ const Optica = () => {
                             <img
                                 src={optica.logo}
                                 alt={optica.name}
-                                className="h-38 object-contain"
+                                className="h-32 object-contain"
                             />
                         </div>
                         <div

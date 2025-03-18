@@ -18,8 +18,7 @@ const effects = [
 
 const SpecialEffects = () => {
     return (
-        <div className="p-12">
-            <h1 className="text-2xl font-semibold mb-6">Спец Эффекты</h1>
+        <div className="p-16">
             <div className="grid grid-cols-3 gap-4">
                 {effects.map((effects, index) => (
                     <div
@@ -31,17 +30,17 @@ const SpecialEffects = () => {
                             <img
                                 src={effects.logo}
                                 alt={effects.name}
-                                className="h-38 object-contain"
+                                className="h-32 object-contain"
                             />
                         </div>
 
                         {/* Title + Button */}
-                        <div className="p-4 flex flex-col items-center text-center transition duration-300 bg-gray-200 group-hover:bg-red-600 group-hover:text-white">
+                        <div className="p-4 flex flex-col items-center text-center transition duration-300 bg-gray-200 group-hover:bg-black group-hover:text-white">
                             <span className="font-medium">{effects.name}</span>
                             <span className="font-medium">{effects.text}</span>
 
                             {/* Hidden Button */}
-                            <button className="w-full mt-4 py-2 px-4 bg-red-600 text-white rounded-lg flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                            <button className="w-full mt-4 py-2 px-4 bg-black text-white rounded-lg flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-300">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 24 24"
