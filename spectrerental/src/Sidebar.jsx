@@ -31,8 +31,8 @@ const Sidebar = () => {
                 className="text-3xl font-bold mb-6 text-center cursor-pointer"
                 onClick={() => navigate("/home")}
             >
-                <span className="text-gray-600">Cine</span>
-                <span className="text-gray-400">Market</span>
+                <span className="text-gray-600">Spectre</span>
+                <span className="text-gray-400">Rental</span>
             </h1>
 
             <ul>

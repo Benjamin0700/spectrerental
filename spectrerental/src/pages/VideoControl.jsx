@@ -14,34 +14,29 @@ const video = [
   { name: "Рации и гарнитуры", logo: "https://patriot.ua/wp-content/uploads/2020/05/RAtsyy-500x500.jpg" },
 ];
 
+const defaultImage = "https://via.placeholder.com/150"; // Zaxira rasm
+
 const VideoControl = () => {
   return (
-    <div className="p-16">
-      <div className="grid grid-cols-3 gap-4">
-        {video.map((video, index) => (
-          <div
-            key={index}
-            className={`border rounded-lg overflow-hidden shadow-md transition duration-300 ${index === 0 ? "border-black" : ""}`}
-          >
-            <div className="p-4 flex justify-center items-center h-48 bg-white">
+    <div className="p-4 sm:p-6 lg:p-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {video.map((item, index) => (
+          <div key={index} className="rounded-lg overflow-hidden shadow-md transition duration-300 hover:shadow-lg">
+            <div className="p-4 flex justify-center items-center h-40 bg-white">
               <img
-                src={video.logo}
-                alt={video.name}
+                src={item.logo || defaultImage}
+                alt={item.name}
                 className="h-32 object-contain"
               />
             </div>
-            <div
-              className={`p-4 flex justify-between items-center transition duration-300 ${
-                index === 0 ? "bg-black text-white" : "bg-gray-200"
-              } hover:bg-black hover:text-white`}
-            >
-              <span className="font-medium">{video.name}</span>
-              <button className="w-10 h-10 flex items-center justify-center rounded-md">
+            <div className="p-4 flex justify-between items-center transition duration-300 bg-gray-200 hover:bg-black hover:text-white">
+              <span className="font-medium">{item.name}</span>
+              <button className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-md">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="white"
+                  stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -57,5 +52,5 @@ const VideoControl = () => {
     </div>
   );
 };
-export default VideoControl;
 
+export default VideoControl;

@@ -15,29 +15,25 @@ const cameras = [
 
 const Cameras = () => {
     return (
-        <div className="p-16">
-            <div className="grid grid-cols-3 gap-4">
+        <div className="p-4 md:p-8 lg:p-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {cameras.map((camera, index) => (
                     <div
                         key={index}
-                        className={`rounded-lg overflow-hidden shadow-md transition duration-300 ${index === 0 ? "border-black" : ""
-                            }`}
+                        className="rounded-lg overflow-hidden shadow-md transition duration-300 border border-gray-200"
                     >
-                        <div className="p-4 flex justify-center items-center h-48 bg-white">
+                        <div className="p-4 flex justify-center items-center h-40 md:h-48 bg-white">
                             <img
                                 src={camera.logo}
                                 alt={camera.name}
-                                className="h-32 object-contain"
+                                className="h-24 md:h-32 object-contain"
                             />
                         </div>
                         {/* Hover bo‘lganda butun card qora bo‘lishi uchun `group` qo‘shildi */}
-                        <div
-                            className={`p-4 flex justify-between items-center transition duration-300 group ${index === 0 ? "text-black" : ""
-                                } hover:bg-black hover:text-white`}
-                        >
-                            <span className="font-medium">Камеры {camera.name}</span>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-md">
-                                <div className="p-3 rounded-lg cursor-pointer transition">
+                        <div className="p-4 flex justify-between items-center transition duration-300 group hover:bg-black hover:text-white">
+                            <span className="font-medium text-sm md:text-base text-center">Камеры {camera.name}</span>
+                            <button className="w-10 h-10 flex items-center justify-center rounded-md">
+                                <div className="p-2 rounded-lg cursor-pointer transition">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 24 24"
@@ -46,7 +42,7 @@ const Cameras = () => {
                                         strokeWidth="2"
                                         strokeLinecap="round"
                                         strokeLinejoin="round"
-                                        className="w-6 h-6 transition-colors duration-300 group-hover:stroke-white"
+                                        className="w-5 h-5 transition-colors duration-300 group-hover:stroke-white"
                                     >
                                         <path d="M5 12h14" />
                                         <path d="M12 5l7 7-7 7" />

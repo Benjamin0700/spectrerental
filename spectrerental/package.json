@@ -1,9 +1,9 @@
 {
-  "name": "cine-market",
+  "name": "spectrerental",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://cinemarket.uz/",
+  "homepage": "https://Benjamin0700.github.io/spectrerental/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

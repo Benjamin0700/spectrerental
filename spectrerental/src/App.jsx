@@ -37,14 +37,14 @@ const App = () => {
           {/* Mobil versiya uchun Sidebar tugmachasi */}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="lg:hidden fixed top-4 left-4 bg-gray-800 text-white p-2 rounded-md z-50"
+            className="lg:hidden fixed top-3 left-3 bg-gray-800 text-white p-2 rounded-md z-50"
           >
             <Menu size={24} />
           </button>
 
           {/* Mobil Sidebar (faqat kichik ekranda ochiladi) */}
           {sidebarOpen && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setSidebarOpen(false)}>
+            <div className="fixed inset-0 bg-white bg-opacity-50 z-40" onClick={() => setSidebarOpen(false)}>
               <div className="w-64 bg-white h-full shadow-lg">
                 <Sidebar />
               </div>
