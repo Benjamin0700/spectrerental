@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
+import Carousel from "./Carousel";
 import { ShoppingCart } from "lucide-react";
 import {
   Camera, Aperture, Filter, Package, Video, Volume2,
@@ -12,7 +13,10 @@ const Home = () => {
     <div className="p-4 min-h-screen">
       {/* 📌 Categories Section */}
       <section className="container mx-auto py-8 px-4 md:px-6">
-        <h2 className="text-2xl md:text-3xl font-semibold text-center mb-6 md:mb-8">Categories</h2>
+        <div className="mt-2 container mx-auto p-4">
+          <Carousel />
+        </div>
+        <h2 className="mt-6 text-2xl md:text-3xl font-semibold text-center mb-6 md:mb-8">Categories</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6">
           {[
             { name: "Камеры", icon: Camera, path: "/cameras" },
